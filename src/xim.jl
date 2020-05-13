@@ -1,6 +1,9 @@
 module xim
 
-greet() = print("Hello World!")
+include("xim_haircut.jl")
+# this is a file to contain the haircut code
+
+export testsum
 
 end # module
 #
