@@ -1,1 +1,1 @@
-ximhaircuttestsum(x,y)=x+y
+xim_haircut_testsum(x,y)=x+y

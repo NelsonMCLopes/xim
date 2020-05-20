@@ -12,13 +12,13 @@
 =#
 module xim
 
-include("xim_basics.jl")
+#include("xim_basics.jl")
 include("xim_haircut.jl")
 # this is a file to contain the haircut code
 
-export ximbasicstestsum
+#export ximbasicstestsum
 #export xim_basics_load_packages
-export ximhaircuttestsum
+export xim_haircut_testsum
 
 
 end # module
