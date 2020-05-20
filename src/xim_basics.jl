@@ -10,11 +10,11 @@
 #export xim_basics_load_packages
 
 #*************************************************
-#function xim_basics_testsum(x,y)
-#  c=x+y
-#  c
-#end
-xim_basics_testsum(a,b)=a+b
+function xim_basics_testsum2(x,y)
+  c=x+y
+  c
+end
+#xim_basics_testsum(a,b)=a+b
 #*************************************************
 #function xim_basics_load_packages()
 #  using Pkg;
