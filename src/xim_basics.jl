@@ -10,9 +10,9 @@
 #export xim_basics_load_packages
 
 #*************************************************
-function ximbasicstestsum(x,y)
-  c=x+y;
-  return c
+function xim_basics_testsum(x,y)
+  c=x+y
+  c
 end
 #*************************************************
 #function xim_basics_load_packages()
