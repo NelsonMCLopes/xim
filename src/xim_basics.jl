@@ -16,15 +16,15 @@ function xim_basics_testsum(x,y)
 end
 #xim_basics_testsum(a,b)=a+b
 #*************************************************
-#function xim_basics_load_packages()
-#  using Pkg;
-#  Pkg.add("Images");
-#  Pkg.add("ImageView");
-#  Pkg.add("TestImages");
-#  Pkg.add("FileIO");
-#  Pkg.add("Colors");
-#  Pkg.add("QuartzImageIO");
-#
-#  using Images, ImageView, TestImages, FileIO, Colors, QuartzImageIO;
-#end
+function xim_basics_load_packages()
+  using Pkg;
+  Pkg.add("Images");
+  Pkg.add("ImageView");
+  Pkg.add("TestImages");
+  Pkg.add("FileIO");
+  Pkg.add("Colors");
+  Pkg.add("QuartzImageIO");
+
+  using Images, ImageView, TestImages, FileIO, Colors, QuartzImageIO;
+end
 #*************************************************
