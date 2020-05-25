@@ -12,8 +12,8 @@ end
 #*************************************************
 function xim_hotHaircut(im,r1,r2,ratio1,rd,ratio2)
   hcim = im
-  hcim[20:25,:]. = 0
-  hcim[:,20:25]. = 1
+  hcim[20:25,:] .= 0
+  hcim[:,20:25] .= 1
   #s=subfunction1(5)
   #hcim = subfunction3(hcim,s)
   return hcim
@@ -22,8 +22,8 @@ end
 #*************************************************
 function xim_coldHaircut(im,r1,r2,ratio1,rd,ratio2)
   hcim = im
-  hcim[50:55,:]. = 0.2
-  hcim[:,50:55]. = 0.8
+  hcim[50:55,:] .= 0.2
+  hcim[:,50:55] .= 0.8
   #s = subfunction2(4)
   #hcim = subfunction3(hcim,s)
   return hcim
