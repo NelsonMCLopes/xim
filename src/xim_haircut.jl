@@ -48,8 +48,8 @@ function subfunction3(im,ar)
   sizeIm = [size(im,1) size(im,2)]
   sizeAr = [size(ar,1) size(ar,2)]
   newim=im;
-  if (sizeIm[1]>100 && sizeIm[1]>100 && sizeIm[2]>100 && sizeIm[2]>100)
-    newim[80:80+sizeAr[1]-1,80:80+sizeAr[2]-1] = ar
-  end
+  #if (sizeIm[1]>100 && sizeIm[1]>100 && sizeIm[2]>100 && sizeIm[2]>100)
+    newim[80:80+sizeAr[1]-1,80:80+sizeAr[2]-1] .= ar
+  #end
   return newim
 end
