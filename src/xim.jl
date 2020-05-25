@@ -20,8 +20,8 @@ export xim_basics_testsum
 export xim_basics_load_packages
 export xim_haircut_testsum
 
-#export xim_hotHaircut
-#export xim_coldhaircut
+export xim_hotHaircut
+export xim_coldhaircut
 
 
 
