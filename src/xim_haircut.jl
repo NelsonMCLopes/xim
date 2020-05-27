@@ -35,7 +35,7 @@ function xim_coldHaircut(im2,r1,r2,ratio1,rd,ratio2)
   im2[50:55,:] .= 0.2
   im2[:,50:55] .= 0.8
   sqb = subfunction2(40)
-  im2 = subfunction3(im2,sqb)
+  im2 = subfunction4(im2,sqb)
   return im2
 end
 
@@ -55,6 +55,18 @@ end
 
 #*************************************************
 function subfunction3(im,ar)
+  sizeIm = [size(im,1) size(im,2)]
+  sizeAr = [size(ar,1) size(ar,2)]
+  #newim=im;
+  #if (sizeIm[1]>100 && sizeIm[1]>100 && sizeIm[2]>100 && sizeIm[2]>100)
+    #newim[80:80+sizeAr[1]-1,80:80+sizeAr[2]-1] .= ar
+    im[80:80+sizeAr[1]-1,80:80+sizeAr[2]-1] .= ar
+  #end
+  #return newim
+  return im
+end
+#*************************************************
+function subfunction4(im,ar)
   sizeIm = [size(im,1) size(im,2)]
   sizeAr = [size(ar,1) size(ar,2)]
   #newim=im;
