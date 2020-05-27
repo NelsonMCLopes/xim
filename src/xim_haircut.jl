@@ -35,7 +35,7 @@ function xim_coldHaircut(im,r1,r2,ratio1,rd,ratio2)
   im[50:55,:] .= 0.2
   im[:,50:55] .= 0.8
   sq = subfunction2(40)
-  im =sufunction3(im,sq)
+  im = subfunction3(im,sq)
   return im
 end
 
