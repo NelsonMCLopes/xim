@@ -10,33 +10,33 @@ function xim_haircut_testsum(x,y)
 end
 
 #*************************************************
-function xim_hotHaircut(im,r1,r2,ratio1,rd,ratio2)
+function xim_hotHaircut(im1,r1,r2,ratio1,rd,ratio2)
   #hcim = im
   #hcim[20:25,:] .= 0
   #hcim[:,20:25] .= 1
   #s = subfunction1(50)
   #hcim2 = subfunction3(hcim,s)
   #return hcim2hcim = im
-  im[20:25,:] .= 0
-  im[:,20:25] .= 1
-  sq = subfunction1(50)
-  im = subfunction3(im,sq)
-  return im
+  im1[20:25,:] .= 0
+  im1[:,20:25] .= 1
+  sqa = subfunction1(50)
+  im1 = subfunction3(im1,sqa)
+  return im1
 end
 
 #*************************************************
-function xim_coldHaircut(im,r1,r2,ratio1,rd,ratio2)
+function xim_coldHaircut(im2,r1,r2,ratio1,rd,ratio2)
   #hcim = im
   #hcim[50:55,:] .= 0.2
   #hcim[:,50:55] .= 0.8
   #s = subfunction2(40)
   #hcim2 = subfunction3(hcim,s)
   #return hcim2
-  im[50:55,:] .= 0.2
-  im[:,50:55] .= 0.8
-  sq = subfunction2(40)
-  im = subfunction3(im,sq)
-  return im
+  im2[50:55,:] .= 0.2
+  im2[:,50:55] .= 0.8
+  sqb = subfunction2(40)
+  im2 = subfunction3(im2,sqb)
+  return im2
 end
 
 #*************************************************
