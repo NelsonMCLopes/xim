@@ -25,6 +25,21 @@ function xim_hotHaircut(im1,r1,r2,ratio1,rd,ratio2)
 end
 
 #*************************************************
+function xim_hotHaircut!(im1,r1,r2,ratio1,rd,ratio2)
+  #hcim = im
+  #hcim[20:25,:] .= 0
+  #hcim[:,20:25] .= 1
+  #s = subfunction1(50)
+  #hcim2 = subfunction3(hcim,s)
+  #return hcim2hcim = im
+  im1[20:25,:] .= 0
+  im1[:,20:25] .= 1
+  sqa = subfunction1(50)
+  im1 = subfunction3(im1,sqa)
+  return im1
+end
+
+#*************************************************
 function xim_coldHaircut(im2,r1,r2,ratio1,rd,ratio2)
   #hcim = im
   #hcim[50:55,:] .= 0.2
@@ -39,6 +54,19 @@ function xim_coldHaircut(im2,r1,r2,ratio1,rd,ratio2)
   return im2
 end
 
+function xim_coldHaircut!(im2,r1,r2,ratio1,rd,ratio2)
+  #hcim = im
+  #hcim[50:55,:] .= 0.2
+  #hcim[:,50:55] .= 0.8
+  #s = subfunction2(40)
+  #hcim2 = subfunction3(hcim,s)
+  #return hcim2
+  im2[50:55,:] .= 0.2
+  im2[:,50:55] .= 0.8
+  sqb = subfunction2(40)
+  im2 = subfunction4(im2,sqb)
+  return im2
+end
 #*************************************************
 function subfunction1(s)
   sq = ones(Float64,(s,s));
