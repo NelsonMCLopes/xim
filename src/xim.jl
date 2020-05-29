@@ -22,8 +22,6 @@ export xim_haircut_testsum
 
 export xim_hotHaircut
 export xim_coldHaircut
-export xim_hotHaircut!
-export xim_coldHaircut!
 
 
 
